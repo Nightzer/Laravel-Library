@@ -6,9 +6,8 @@
                 <div class="card card-login ">
                     <div class="card-login-splash">
                         <div class="wrapper">
-                            <h3>Account</h3>
-                            <a class="btn" href="{{ route('register') }}">Register</a>
-                            <a class="btn" href="{{ route('register') }}">Register</a>
+                            <h3>{{__('Account')}}</h3>
+                            <a class="btn" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </div>
                         {!! Html::image('https://placekitten.com/g/300/300',__('Logo')) !!}
                     </div>
@@ -23,8 +22,6 @@
                                 {!! Form::password('password', null, ['placeholder' => 'Password','class' => 'validate']) !!}
                                 {!! Form::label('password') !!}
                             </div>
-
-                            <a href="{{ route('password.request') }}">Forgot Password?</a>
                             <!-- Validation Errors -->
                             <x-validation-errors class="mb-4" :errors="$errors" />
 
