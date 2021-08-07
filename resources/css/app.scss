@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.brand-logo {
+    color: white;
+    width: 50px;
+}
+.card-login {
+    display: flex;
+    .card-login-splash {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        flex: 1;
+        h3 {
+            font-size: 2.92rem;
+            line-height: 110%;
+            margin-top: 0;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            display: block;
+            z-index: -1;
+        }
+    }
+    .card-content {
+        flex: 1;
+        .card-title {
+            display: block;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .input-field {
+            position: relative;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.collapsible-header {
+    .title{
+        width: 80%;
+    }
+    .borrow {
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+     }
+}
